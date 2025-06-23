@@ -1,0 +1,20 @@
+# macOS system files
+.DS_Store
+
+# Editor/IDE configuration files
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+
+# Node dependencies (if build tools are added later)
+node_modules/
+dist/
+build/
+
+# WordPress upload directory (not needed in theme repo)
+wp-content/uploads/
