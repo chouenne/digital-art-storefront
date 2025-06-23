@@ -49,3 +49,10 @@ function xh_custom_header()
   </div>
   <?php
 }
+
+//register menu
+function xh_register_menus()
+{
+  register_nav_menu('primary', __('Primary Menu', 'xh-storefront-child'));
+}
+add_action('after_setup_theme', 'xh_register_menus');

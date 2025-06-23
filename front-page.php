@@ -63,6 +63,18 @@
   </div>
 </section>
 
+<section class="section-onsale-products">
+  <!-- <h2>On Sale</h2> -->
+  <?php
+  $args = array(
+    'limit' => 4,
+    'columns' => 4
+  );
+  storefront_on_sale_products($args);
+  ?>
+</section>
+
+
 <section class="cta-banner">
   <div class="container">
     <h2>Unlock Exclusive Benefits</h2>
