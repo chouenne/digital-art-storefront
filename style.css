@@ -1,0 +1,147 @@
+/*
+ Theme Name:   XH Storefront Child
+ Template:     storefront
+ Author:       Xuan Huang
+ Description:  A child theme for Storefront, customized for demo project.
+ Version:      1.0.0
+*/
+
+.xh-header-wrapper {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.xh-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.xh-logo {
+  flex: 1;
+}
+
+.xh-menu {
+  flex: 2;
+  text-align: center;
+}
+
+.xh-account-cart {
+  flex: 1;
+  text-align: right;
+}
+
+.xh-account-cart a {
+  margin-left: 15px;
+}
+
+.xh-header-bottom {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu > ul > li {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.menu > ul > li > a:hover {
+  color: #2ecc71;
+}
+
+/* 子菜单隐藏 */
+.menu ul ul {
+  display: none;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  list-style: none;
+  margin: 0;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul li {
+  width: 180px;
+}
+
+.menu ul ul li a {
+  padding: 8px 15px;
+  color: #333;
+  display: block;
+}
+
+/* hero block */
+
+.hero {
+  background: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Hero responsiveness */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .btn-primary {
+    padding: 8px 16px;
+  }
+}
+
+/* Featured Categories block */
+.featured-categories {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.featured-categories .category-item {
+  flex: 1 1 22%;
+}
+
+/* Featured Categories responsiveness */
+@media (max-width: 768px) {
+  .featured-categories {
+    flex-direction: column;
+  }
+  .featured-categories .category-item {
+    flex: 1 1 100%;
+  }
+}
