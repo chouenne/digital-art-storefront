@@ -198,3 +198,65 @@
     font-size: 1.8rem;
   }
 }
+
+/* CTA banner section styling */
+.cta-banner {
+  background-color: #222; /* Dark background for minimal style */
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 3rem auto;
+  max-width: 800px;
+}
+
+.cta-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-banner p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Primary button styling */
+.btn-primary {
+  background-color: #fff;
+  color: #222;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Responsive adjustments for CTA banner */
+@media (max-width: 767px) {
+  .cta-banner {
+    padding: 2rem 1rem;
+    max-width: 100%;
+  }
+
+  .cta-banner h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-banner p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+}

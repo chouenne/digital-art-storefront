@@ -63,4 +63,12 @@
   </div>
 </section>
 
+<section class="cta-banner">
+  <div class="container">
+    <h2>Unlock Exclusive Benefits</h2>
+    <p>Join our Year Pass membership and get unlimited access to all digital art downloads.</p>
+    <a href="/membership" class="btn btn-primary">Join Pro Now</a>
+  </div>
+</section>
+
 <?php get_footer(); ?>
